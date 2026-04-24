@@ -1,5 +1,14 @@
+import Read from "@/app/ui/customers/read";
+
 const Page = () => {
-  return <div>Page</div>;
+  return (
+    <div>
+      <Read />
+      Page
+    </div>
+  );
 };
 
 export default Page;
+
+
