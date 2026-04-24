@@ -160,6 +160,7 @@ export async function fetchInvoiceById(id: string) {
       amount: invoice.amount / 100,
     }));
 
+    // invoice [0] mean return only one invoice because we use id to fetch invoice [1] is not exist
     return invoice[0];
   } catch (error) {
     console.error('Database Error:', error);
